@@ -3,7 +3,7 @@ import { ScreenClassProvider, Col, Container, Row } from "react-grid-system";
 import "./App.css";
 import CourseView from "./components/CourseView/index";
 import Header from "./components/Header";
-import Sidebar from "components/Sidebar";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
