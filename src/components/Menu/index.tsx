@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./sidebar.module.css";
+import styles from "./Menu.module.css";
 import "../../styles/utils.css";
 import Icon from "@material-ui/core/Icon";
 interface navLinks {
@@ -34,7 +34,7 @@ const NavLinks: navLinks[] = [
     active: false,
   },
 ];
-const Sidebar: React.FC = () => {
+const Menu: React.FC = () => {
   return (
     <>
       <div className={styles.TitleContainer}>
@@ -58,4 +58,4 @@ const Sidebar: React.FC = () => {
   );
 };
 
-export default Sidebar;
+export default Menu;
