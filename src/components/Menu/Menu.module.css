@@ -36,6 +36,7 @@
 }
 .LinkActive {
   background-color: var(--light-purple);
+  margin-bottom: -5px;
 }
 .LinkActive a {
   color: var(--purple);
