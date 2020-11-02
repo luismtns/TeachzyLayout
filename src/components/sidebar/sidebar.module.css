@@ -1,0 +1,48 @@
+.TitleContainer {
+  padding: 2em 1.5em;
+}
+.linkMenu {
+  list-style: none;
+  margin-top: 2em;
+  padding: 0;
+  padding-right: 2em;
+}
+.linkMenu > li {
+  margin-bottom: 1em;
+  display: flex;
+  align-items: center;
+  padding: 1em;
+  padding-left: 2em;
+  margin: 0 -15px 0 -15px;
+  border-radius: 0 0.5em 0.5em 0;
+  transition: background-color 400ms ease-out;
+}
+.linkMenu > li:hover {
+  background-color: var(--light-purple);
+}
+.linkMenu > li:hover > span {
+  color: var(--purple);
+}
+.LinkActive {
+  background-color: var(--light-purple);
+}
+.LinkActive a {
+  color: var(--purple);
+}
+.LinkActive span {
+  color: var(--purple);
+}
+.sidebarLinks {
+  color: var(--black);
+  margin-left: 1em;
+}
+.sidebarLinks:hover,
+.sidebarLinks:active {
+  color: var(--purple);
+}
+
+.line {
+  border: none;
+  border-top: 0.1em solid #dbdbdb;
+  margin: 4em auto 0;
+}

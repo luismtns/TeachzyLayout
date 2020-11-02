@@ -1,0 +1,27 @@
+@import-normalize;
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  --white: #ffffff;
+  --black: #2c2c2c;
+  --gray: #b6b6b6;
+  --light-gray: #efefef;
+  --purple: #644bc3;
+  --light-purple: #f1effa;
+  --gray-purple: #f3f2f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 2em;
+}

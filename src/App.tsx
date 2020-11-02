@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { ScreenClassProvider, Col, Container, Row } from "react-grid-system";
+import "./App.css";
+import Header from "./components/header/header";
+import Sidebar from "./components/sidebar/sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ScreenClassProvider>
+      <Container fluid>
+        <Row>
+          <Col md={3}>
+            <Sidebar />
+          </Col>
+          <Col md={4}></Col>
+          <Col md={5}>
+            <Header />
+          </Col>
+        </Row>
+      </Container>
+    </ScreenClassProvider>
   );
 }
 
