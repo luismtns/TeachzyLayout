@@ -1,8 +1,9 @@
 import React from "react";
 import { ScreenClassProvider, Col, Container, Row } from "react-grid-system";
 import "./App.css";
-import Header from "./components/header/header";
-import Sidebar from "./components/sidebar/sidebar";
+import CourseView from "./components/CourseView";
+import Header from "./components/Header";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
           <Col md={3}>
             <Sidebar />
           </Col>
-          <Col md={4}></Col>
+          <Col md={4}>
+            <CourseView />
+          </Col>
           <Col md={5}>
             <Header />
           </Col>
