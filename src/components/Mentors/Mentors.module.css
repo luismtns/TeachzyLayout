@@ -1,0 +1,34 @@
+.MentorContainer {
+  box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.imgFluidRounded {
+  max-width: 4rem;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+}
+.imgFluidRounded__border {
+  width: fit-content;
+  border-radius: 50%;
+  padding: 0.25rem;
+  border: 0.125em solid var(--light-purple);
+  transition: border 400ms ease-out;
+}
+.imgFluidRounded__border:hover {
+  border: 0.125em solid var(--purple);
+}
+
+.MentorContainer__name {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.MentorContainer__about {
+  margin: 0;
+  font-size: 0.875em;
+  line-height: 1.2;
+}

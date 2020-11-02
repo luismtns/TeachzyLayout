@@ -1,99 +1,48 @@
-.formControl {
-  padding: 1rem 0.75rem;
-  background-color: var(--gray-purple);
-  border: 2px solid var(--gray-purple);
-  border-radius: 0.5rem;
-  width: 100%;
-  min-width: 100%;
-  transition: border 400ms ease-out;
-  font-size: 1rem;
-}
-.formControl:focus {
-  border: 2px solid var(--purple);
-}
-
-.searchInputIcon {
-  background: var(--gray-purple) url("../../assets/search.png") no-repeat scroll
-    0.5rem 0.75rem;
-  padding-left: 2.5rem;
-}
-
-.NotifyIcon {
-  display: block;
-  width: 3rem;
-  height: 3rem;
-  text-align: center;
-  background-color: var(--light-purple);
-  padding: 0.75rem;
-  border-radius: 0.75rem;
-  cursor: pointer;
-}
-.NotifyIcon__material {
-  color: var(--gray);
-  transition: color 400ms ease-out;
-}
-.NotifyIcon:hover .NotifyIcon__material {
-  color: var(--purple);
-}
-.NotifyIcon::after {
-  content: " ";
-  display: block;
-  width: 0.4rem;
-  height: 0.4rem;
-  background-color: var(--red);
-  border-radius: 50%;
-  position: relative;
-  top: -1.5rem;
-  left: 0.8rem;
-}
-
-/* Course */
-.Course {
-  padding: 1rem 0.5rem;
-  transition: box-shadow 400ms ease-out;
-  cursor: pointer;
-}
-.Course:hover {
-  box-shadow: 0.5rem 0.5rem 4rem rgba(0, 0, 0, 0.15);
-  border-radius: 1rem;
-}
-.Course__focus {
-  box-shadow: 0.5rem 0.5rem 4rem rgba(0, 0, 0, 0.15);
-  border-radius: 1rem;
-}
-.Course__background {
+.CourseBox {
+  background: var(--gray-purple) url("../../assets/lines_blue.png") no-repeat;
   background-size: cover;
-  border-radius: 0.75rem;
-  padding: 0.75rem 0.75rem 2.5rem;
+  padding: 1rem;
+  padding-bottom: 8rem;
+  border-radius: 1rem;
+  margin-top: 2rem;
 }
-.Course__Day {
-  font-size: 1.75rem;
+.CourseBox__Day {
   margin: 0;
-  padding: 0;
+  font-size: 2.625em;
+  line-height: 1;
 }
-.Course__Mouth {
-  font-size: 0.75rem;
+.CourseBox__Month {
   margin: 0;
-  padding: 0;
 }
 .Course__Title {
-  margin: 0;
-  font-size: 1.2rem;
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
-.Course__Like {
-  margin: 0;
-  margin-top: 1rem;
+.Btn__Black {
+  font-size: 1em;
+  padding: 1rem 2rem;
+  border: 0.125em solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 400ms ease-out, color 400ms ease-out,
+    border 400ms ease-out;
+}
+.Btn__Black:hover {
+  border: 0.125em solid var(--black);
+  background-color: transparent;
+  color: var(--black);
+}
+.Link__review {
   font-size: 1rem;
-  font-weight: 400;
-  color: var(--gray);
-}
-.Course__LikeIcon {
   margin: 0;
-  margin-right: 0.5rem;
-  font-size: 1rem !important;
-  color: var(--gray);
+  transition: color 400ms ease-out;
 }
-.Course__Like.Liked,
-.Course__LikeIcon.Liked {
+.Link__review:hover {
   color: var(--purple);
+}
+.Link__reviewIcon {
+  vertical-align: middle;
+  margin-right: 1rem;
 }

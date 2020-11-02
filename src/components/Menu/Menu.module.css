@@ -1,5 +1,8 @@
 .TitleContainer {
-  padding: 2em 1.5em;
+  padding: 1.5em;
+}
+.TitleContainer__title {
+  margin: 1rem 0;
 }
 .line {
   border: none;
@@ -14,12 +17,11 @@
   padding-right: 2em;
 }
 .linkMenu > li {
-  margin-bottom: 1em;
   display: flex;
   align-items: center;
   padding: 1em;
   padding-left: 2em;
-  margin: 0 -15px 0 -15px;
+  margin: 0 -15px 0.5em -15px;
   border-radius: 0 0.5em 0.5em 0;
   transition: background-color 400ms ease-out;
 }
@@ -41,8 +43,55 @@
 .sidebarLinks {
   color: var(--black);
   margin-left: 1em;
+  font-size: 0.875rem;
 }
 .sidebarLinks:hover,
 .sidebarLinks:active {
   color: var(--purple);
+}
+
+.BottomMenu {
+  margin-top: 2rem;
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .BottomMenu {
+    position: relative;
+  }
+}
+.BottomMenu__Logout {
+  padding-left: 1rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+.BottomMenu__Logout:hover {
+  color: var(--purple);
+}
+.BottomMenu__LogoutIcon {
+  vertical-align: middle;
+  margin-right: 0.75rem;
+}
+
+.Announce {
+  padding: 4rem 1.5rem 1rem 1.5rem;
+  background: var(--gray-purple) url("../../assets/line_min_purple.png")
+    no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  max-width: 180px;
+  border-radius: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+}
+.Announce__title {
+  font-size: 0.75rem;
+  margin: 0;
+  color: var(--white);
+}
+.Announce__icon {
+  float: right;
+  color: var(--white);
+  margin-left: 0.25rem;
 }
