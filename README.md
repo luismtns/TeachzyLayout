@@ -1,5 +1,6 @@
 # Teachzy Layout
 
+![Teachzy Layout](https://imgur.com/3FGGeh9)
 Layout static page from Dribbble, bootstrapped with [Create React App](https://github.com/facebook/create-react-app) for a job apply.
 
 ## Available Scripts
