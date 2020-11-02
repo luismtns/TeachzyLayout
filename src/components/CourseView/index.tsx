@@ -5,41 +5,69 @@ import { Row, Col } from "react-grid-system";
 // import "../../assets/search.png";
 import linesBlue from "../../assets/lines_blue.png";
 import Icon from "@material-ui/core/Icon";
+import { Animated } from "react-animated-css";
 
 const CourseView: React.FC = (props) => {
   return (
     <>
       <Row>
         <Col>
-          <div className={styles.CourseBox}>
-            <h2 className={styles.CourseBox__Day}>15</h2>
-            <h4 className={styles.CourseBox__Month}>Jun</h4>
-          </div>
+          <Animated
+            animationIn="fadeInDown"
+            animationOut="fadeOutDown"
+            animationInDelay={2000}
+            animationInDuration={1600}
+            animationOutDuration={1600}
+            isVisible={true}
+          >
+            <div className={styles.CourseBox}>
+              <h2 className={styles.CourseBox__Day}>15</h2>
+              <h4 className={styles.CourseBox__Month}>Jun</h4>
+            </div>
+          </Animated>
         </Col>
       </Row>
       <Row>
         <Col>
-          <h2 className={styles.Course__Title}>
-            User Experience Design Fundamentals
-          </h2>
-          <p>
-            Gain the basic skills in User Experience. Study practice and theory.
-            Find out techniques and tools used to design efficiently...{" "}
-            <a className={styles.Course__Link}>more</a>
-          </p>
+          <Animated
+            animationIn="fadeInDown"
+            animationOut="fadeOutDown"
+            animationInDelay={2200}
+            animationInDuration={800}
+            animationOutDuration={800}
+            isVisible={true}
+          >
+            <h2 className={styles.Course__Title}>
+              User Experience Design Fundamentals
+            </h2>
+            <p>
+              Gain the basic skills in User Experience. Study practice and
+              theory. Find out techniques and tools used to design
+              efficiently... <a className={styles.Course__Link}>more</a>
+            </p>
+          </Animated>
         </Col>
       </Row>
-      <Row align="center">
-        <Col xs={6}>
-          <button className={styles.Btn__Black}>Buy course</button>
-        </Col>
-        <Col xs={6}>
-          <a className={styles.Link__review}>
-            <Icon className={styles.Link__reviewIcon}>comment_bank</Icon>{" "}
-            Reviews
-          </a>
-        </Col>
-      </Row>
+      <Animated
+        animationIn="fadeInDown"
+        animationOut="fadeOutDown"
+        animationInDelay={2400}
+        animationInDuration={800}
+        animationOutDuration={800}
+        isVisible={true}
+      >
+        <Row align="center">
+          <Col xs={6}>
+            <button className={styles.Btn__Black}>Buy course</button>
+          </Col>
+          <Col xs={6}>
+            <a className={styles.Link__review}>
+              <Icon className={styles.Link__reviewIcon}>comment_bank</Icon>{" "}
+              Reviews
+            </a>
+          </Col>
+        </Row>
+      </Animated>
     </>
   );
 };
