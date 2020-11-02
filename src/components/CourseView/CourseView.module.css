@@ -35,6 +35,15 @@
   background-color: transparent;
   color: var(--black);
 }
+.Course__Link {
+  font-size: 1rem;
+  margin: 0;
+  transition: color 400ms ease-out;
+  color: var(--purple);
+}
+.Course__Link:hover {
+  text-decoration: underline;
+}
 .Link__review {
   font-size: 1rem;
   margin: 0;

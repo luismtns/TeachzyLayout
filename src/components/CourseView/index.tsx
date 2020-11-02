@@ -25,7 +25,7 @@ const CourseView: React.FC = (props) => {
           <p>
             Gain the basic skills in User Experience. Study practice and theory.
             Find out techniques and tools used to design efficiently...{" "}
-            <a>more</a>
+            <a className={styles.Course__Link}>more</a>
           </p>
         </Col>
       </Row>

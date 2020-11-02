@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Teachzy Layout
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Layout static page from Dribbble, bootstrapped with [Create React App](https://github.com/facebook/create-react-app) for a job apply.
 
 ## Available Scripts
 
