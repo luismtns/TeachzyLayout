@@ -2,7 +2,7 @@
 
 Layout static page from Dribbble, bootstrapped with [Create React App](https://github.com/facebook/create-react-app) for a job apply.
 
-Online Version: https://teachzy-layout.vercel.app/
+Online Version: https://teachzy-layout.vercel.app/ \
 Alternative Link: https://teachzy-layout.luismtns.vercel.app/
 
 ![Teachzy Layout](https://i.imgur.com/3FGGeh9.jpg)
