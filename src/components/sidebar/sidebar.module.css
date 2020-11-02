@@ -1,6 +1,12 @@
 .TitleContainer {
   padding: 2em 1.5em;
 }
+.line {
+  border: none;
+  border-top: 0.1em solid #dbdbdb;
+  margin: 4em 0 0;
+  width: 75%;
+}
 .linkMenu {
   list-style: none;
   margin-top: 2em;
@@ -39,10 +45,4 @@
 .sidebarLinks:hover,
 .sidebarLinks:active {
   color: var(--purple);
-}
-
-.line {
-  border: none;
-  border-top: 0.1em solid #dbdbdb;
-  margin: 4em auto 0;
 }

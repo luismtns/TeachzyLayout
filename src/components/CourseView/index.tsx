@@ -57,15 +57,15 @@ const CoursesList: ICourses[] = [
 const CourseView: React.FC = (props) => {
   return (
     <>
-      <Row align="center" className="mb-4">
-        <Col className="mt-5" xs={8} md={6}>
+      <Row align="center">
+        <Col className="my-5" xs={8} md={6}>
           <input
             type="text"
             placeholder="Search"
             className={`${styles.formControl} ${styles.searchInputIcon}`}
           />
         </Col>
-        <Col className="mt-5" xs={3} md={3} offset={{ xs: 1, md: 3 }}>
+        <Col className="my-5" xs={3} md={3} offset={{ xs: 1, md: 3 }}>
           <span className={styles.NotifyIcon}>
             <Icon className={styles.NotifyIcon__material}>notifications</Icon>
           </span>
@@ -75,7 +75,7 @@ const CourseView: React.FC = (props) => {
         CoursesList.map((el: ICourses, i: number) => {
           return (
             <Row
-              className={`${styles.Course} my-4 ${
+              className={`${styles.Course} my-3 ${
                 el?.focus ? styles.Course__focus : ""
               }`}
               align="center"

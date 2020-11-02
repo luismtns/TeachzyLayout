@@ -1,9 +1,9 @@
 import React from "react";
 import { ScreenClassProvider, Col, Container, Row } from "react-grid-system";
 import "./App.css";
-import CourseView from "./components/CourseView";
-import Header from "./components/Header";
-import Sidebar from "./components/Sidebar";
+import CourseView from "./components/CourseView/index";
+import Header from "./components/Header/index";
+import Sidebar from "./components/Sidebar/index";
 
 function App() {
   return (
