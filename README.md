@@ -1,9 +1,9 @@
 # Teachzy Layout
 
-Layout static page from Dribbble, bootstrapped with [Create React App](https://github.com/facebook/create-react-app) for a job apply.
+Layout static page from [Dribbble](https://dribbble.com/shots/13851944-Teachzy-Online-courses), bootstrapped with [Create React App](https://github.com/facebook/create-react-app) for a job apply.
 
-Online Version: https://teachzy-layout.vercel.app/ \
-Alternative Link: https://teachzy-layout.luismtns.vercel.app/
+## [Online Version](https://teachzy-layout.vercel.app/) \
+### [Alternative Link](https://teachzy-layout.luismtns.vercel.app/)
 
 ![Teachzy Layout](https://i.imgur.com/3FGGeh9.jpg)
 
@@ -11,7 +11,7 @@ Alternative Link: https://teachzy-layout.luismtns.vercel.app/
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm start`*
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
