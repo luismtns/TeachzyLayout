@@ -13,11 +13,12 @@ import Menu from "./components/Menu";
 import CourseFinder from "./components/CourseFinder";
 import CourseView from "./components/CourseView/index";
 import Mentors from "./components/Mentors/index";
+import CourseInfo from "./components/CourseInfo/index";
 
 function App() {
   return (
     <ScreenClassProvider>
-      <Container fluid>
+      <Container className="GlobalPadding" fluid>
         <Row>
           <Col md={2}>
             <Visible xs sm>
@@ -33,10 +34,12 @@ function App() {
               <Header />
             </Hidden>
             <Row>
-              <Col md={8}>
+              <Col md={7} offset={{ md: 1 }}>
                 <CourseView />
               </Col>
-              <Col></Col>
+              <Col>
+                <CourseInfo />
+              </Col>
             </Row>
             <Mentors />
           </Col>

@@ -1,13 +1,16 @@
 .TitleContainer {
   padding: 1.5em;
+  padding-top: 0;
 }
 .TitleContainer__title {
-  margin: 1rem 0;
+  margin: 0;
+  line-height: 3;
+  font-size: 1.375em;
 }
 .line {
   border: none;
   border-top: 0.1em solid #dbdbdb;
-  margin: 4em 0 0;
+  margin: 0;
   width: 75%;
 }
 .linkMenu {

@@ -27,9 +27,9 @@ const Mentors: React.FC = (props) => {
     <>
       <Row>
         {MentorsList &&
-          MentorsList.map((el: iMentors) => {
+          MentorsList.map((el: iMentors, i: number) => {
             return (
-              <Col xs={6} className="mt-5">
+              <Col key={i} md={6} className="mt-5">
                 <div className={styles.MentorContainer}>
                   <Row nogutter align="center">
                     <Col xs={4}>

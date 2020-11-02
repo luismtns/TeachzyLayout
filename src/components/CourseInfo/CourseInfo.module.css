@@ -1,0 +1,41 @@
+.CourseInfo {
+  width: 100%;
+  max-width: 8.75rem;
+  height: 5.9375em;
+  border: 1px dashed var(--gray);
+  border-radius: 1rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+.CourseInfo__Title {
+  font-size: 2em;
+  color: var(--purple);
+  max-width: 100%;
+  margin: 0 auto;
+}
+.CourseInfo__SuperTitle {
+  font-size: 0.625rem;
+  font-weight: 600;
+  vertical-align: super;
+  color: var(--black);
+  float: right;
+  padding-left: 0.25rem;
+}
+.CourseInfo__SubTitle {
+  font-size: 0.875rem;
+  vertical-align: super;
+  text-decoration: underline;
+}
+.CourseInfo__Text {
+  margin: 0;
+  font-size: 0.75em;
+}
+.CourseInfo__Icon {
+  transform: rotate(90deg);
+  color: var(--purple);
+}

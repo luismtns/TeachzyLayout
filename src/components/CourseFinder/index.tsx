@@ -58,14 +58,14 @@ const CourseFinder: React.FC = (props) => {
   return (
     <>
       <Row align="center">
-        <Col className="my-5" xs={8} md={7}>
+        <Col className="mb-5" xs={8} md={7}>
           <input
             type="text"
             placeholder="Search"
             className={`${styles.formControl} ${styles.searchInputIcon}`}
           />
         </Col>
-        <Col className="my-5" xs={3} md={3} offset={{ xs: 1, md: 2 }}>
+        <Col className="mb-5" xs={3} md={3} offset={{ xs: 1, md: 2 }}>
           <span className={styles.NotifyIcon}>
             <Icon className={styles.NotifyIcon__material}>notifications</Icon>
           </span>
@@ -75,40 +75,43 @@ const CourseFinder: React.FC = (props) => {
         CoursesList.map((el: ICourses, i: number) => {
           return (
             <div
+              key={i}
               className={`${styles.Course} mb-4 ${
                 el?.focus ? styles.Course__focus : ""
               }`}
             >
               <Row align="center">
-                <Col xs={4}>
-                  <div
-                    className={styles.Course__background}
-                    style={{
-                      backgroundImage: `url(${el.background})`,
-                    }}
-                  >
-                    <h4 className={styles.Course__Day}>
-                      {el.day < 10 ? `0${el.day}` : el.day}
-                    </h4>
-                    <h5 className={styles.Course__Mouth}>{el.mouth}</h5>
-                  </div>
-                </Col>
-                <Col xs={8}>
-                  <h3 className={styles.Course__Title}>{el.title}</h3>
-                  <h5
-                    className={`${styles.Course__Like} ${
-                      el.liked ? styles.Liked : ""
-                    }`}
-                  >
-                    <Icon
-                      className={`${styles.Course__LikeIcon} ${
-                        el.liked ? styles.Liked : ""
-                      }`}
+                <Col xs={12}>
+                  <div className={styles.Course__container}>
+                    <div
+                      className={styles.Course__DayCard}
+                      style={{
+                        backgroundImage: `url(${el.background})`,
+                      }}
                     >
-                      favorite
-                    </Icon>
-                    {el.likes}
-                  </h5>
+                      <h4 className={styles.Course__Day}>
+                        {el.day < 10 ? `0${el.day}` : el.day}
+                      </h4>
+                      <h5 className={styles.Course__Mouth}>{el.mouth}</h5>
+                    </div>
+                    <div className={styles.Course__TextBox}>
+                      <h3 className={styles.Course__Title}>{el.title}</h3>
+                      <h5
+                        className={`${styles.Course__Like} ${
+                          el.liked ? styles.Liked : ""
+                        }`}
+                      >
+                        <Icon
+                          className={`${styles.Course__LikeIcon} ${
+                            el.liked ? styles.Liked : ""
+                          }`}
+                        >
+                          favorite
+                        </Icon>
+                        {el.likes}
+                      </h5>
+                    </div>
+                  </div>
                 </Col>
               </Row>
             </div>

@@ -22,7 +22,7 @@ const Header: React.FC = (props) => {
     <>
       <Container>
         <Row align="center">
-          <Col xs={12} md={8} className="mt-5">
+          <Col xs={12} md={8} className="mb-4">
             <ul className={styles.Header__nav}>
               {HeaderLinks &&
                 HeaderLinks.map((e: IHeader, i: number) => {
@@ -34,7 +34,7 @@ const Header: React.FC = (props) => {
                 })}
             </ul>
           </Col>
-          <Col xs={12} md={4} className="mt-5">
+          <Col xs={12} md={4} className="mb-4">
             <Row nogutter justify="around" align="center">
               <Col xs={6} md={8} className="text-sm-center">
                 <p className={styles.NameField}>John Alby</p>

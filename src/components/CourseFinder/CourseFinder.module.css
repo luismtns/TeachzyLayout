@@ -61,10 +61,28 @@
   box-shadow: 0.5rem 0.5rem 3rem rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
 }
-.Course__background {
+.Course__container {
+  display: flex;
+  align-items: center;
+}
+.Course__DayCard {
   background-size: cover;
   border-radius: 0.75rem;
   padding: 0.75rem 0.75rem 2.5rem;
+  min-width: 7.125em;
+  width: 7.125em;
+  max-width: 7.125em;
+  min-height: 7.125em;
+  height: 7.125em;
+  max-height: 7.125em;
+  margin-right: 1rem;
+}
+.Course__TextBox {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: clip;
+  text-overflow: ellipsis;
+  text-overflow: "…";
 }
 .Course__Day {
   font-size: 1.75rem;

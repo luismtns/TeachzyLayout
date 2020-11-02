@@ -3,12 +3,12 @@ import styles from "./Menu.module.css";
 import "../../styles/utils.css";
 import Icon from "@material-ui/core/Icon";
 import { Row, Col } from "react-grid-system";
-interface navLinks {
+interface navLink {
   name: string;
   icon: string;
   active: boolean;
 }
-const NavLinks: navLinks[] = [
+const NavLinksList: navLink[] = [
   {
     name: "Pinned",
     icon: "bookmark_border",
@@ -40,13 +40,13 @@ const Menu: React.FC = () => {
     <>
       <div className={styles.TitleContainer}>
         <h1 className={styles.TitleContainer__title}>Teachzy</h1>
-        <hr className={styles.line} />
+        <hr className={`${styles.line} mt-5`} />
       </div>
       <ul className={styles.linkMenu}>
-        {NavLinks &&
-          NavLinks.map((e) => {
+        {NavLinksList &&
+          NavLinksList.map((e: navLink, i: number) => {
             return (
-              <li key={e.name} className={e.active ? styles.LinkActive : ""}>
+              <li key={i} className={e.active ? styles.LinkActive : ""}>
                 <Icon fontSize="small">{e.icon}</Icon>
                 <a className={styles.sidebarLinks}>{e.name}</a>
               </li>

@@ -2,9 +2,10 @@
   background: var(--gray-purple) url("../../assets/lines_blue.png") no-repeat;
   background-size: cover;
   padding: 1rem;
-  padding-bottom: 8rem;
+  padding-bottom: 8.625rem;
+  width: 100%;
+  max-width: 24em;
   border-radius: 1rem;
-  margin-top: 2rem;
 }
 .CourseBox__Day {
   margin: 0;
