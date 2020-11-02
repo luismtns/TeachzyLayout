@@ -3,16 +3,14 @@ import { ScreenClassProvider, Col, Container, Row } from "react-grid-system";
 import "./App.css";
 import CourseView from "./components/CourseView/index";
 import Header from "./components/Header/Header";
-import Sidebar from "./components/sidebar/sidebar";
+// import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
   return (
     <ScreenClassProvider>
       <Container fluid>
         <Row>
-          <Col md={3}>
-            <Sidebar />
-          </Col>
+          <Col md={3}>{/* <Sidebar /> */}</Col>
           <Col md={4}>
             <CourseView />
           </Col>

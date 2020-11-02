@@ -34,7 +34,6 @@ const NavLinks: navLinks[] = [
     active: false,
   },
 ];
-/* eslint-disable */
 const Sidebar: React.FC = () => {
   return (
     <>
