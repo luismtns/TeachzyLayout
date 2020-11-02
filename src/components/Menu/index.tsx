@@ -65,7 +65,9 @@ const Menu: React.FC = () => {
                   animationOutDuration={800}
                   isVisible={true}
                 >
-                  <Icon fontSize="small">{e.icon}</Icon>
+                  <Icon className={styles.sidebarLinks__Icon} fontSize="small">
+                    {e.icon}
+                  </Icon>
                   <a className={styles.sidebarLinks}>{e.name}</a>
                 </Animated>
               </li>

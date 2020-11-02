@@ -31,12 +31,12 @@
 .linkMenu > li:hover {
   background-color: var(--light-purple);
 }
-.linkMenu > li:hover > span {
+.sidebarLinks__Icon {
   color: var(--purple);
+  margin-bottom: -5px;
 }
 .LinkActive {
   background-color: var(--light-purple);
-  margin-bottom: -5px;
 }
 .LinkActive a {
   color: var(--purple);
