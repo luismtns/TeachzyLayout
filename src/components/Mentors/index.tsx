@@ -45,7 +45,7 @@ const Mentors: React.FC = (props) => {
                         <div className={styles.imgFluidRounded__border}>
                           <img
                             src={el.photo}
-                            alt={`${el.name} photo`}
+                            alt={`${el.name}`}
                             className={styles.imgFluidRounded}
                           />
                         </div>

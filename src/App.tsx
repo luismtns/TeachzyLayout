@@ -18,7 +18,7 @@ import CourseInfo from "./components/CourseInfo/index";
 function App() {
   return (
     <ScreenClassProvider>
-      <Container className="GlobalPadding" fluid>
+      <Container className="BodyPadding" fluid>
         <Row>
           <Col md={2}>
             <Visible xs sm>

@@ -5,13 +5,13 @@ import { Row, Col } from "react-grid-system";
 import Icon from "@material-ui/core/Icon";
 import { Animated } from "react-animated-css";
 
-interface CourseInfo {
+interface ICourseInfo {
   supertitle: string;
   title: string;
   subtitle?: string;
   text: string;
 }
-const CourseInfoList: CourseInfo[] = [
+const CourseInfoList: ICourseInfo[] = [
   {
     supertitle: "30",
     title: "02",
@@ -39,7 +39,7 @@ const CourseInfo: React.FC = (props) => {
     <>
       <Row>
         {CourseInfoList &&
-          CourseInfoList.map((el: CourseInfo, i: number) => {
+          CourseInfoList.map((el: ICourseInfo, i: number) => {
             return (
               <Col key={i} xs={12}>
                 <Animated

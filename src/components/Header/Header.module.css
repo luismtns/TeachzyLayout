@@ -6,13 +6,23 @@
 .Header__nav li {
   display: inline;
   margin-right: 1.5rem;
+  cursor: pointer;
 }
 .imgFluidRounded {
-  max-width: 4rem;
+  max-width: 3.5rem;
   display: block;
   border-radius: 50%;
+  float: right;
 }
 .NameField {
-  margin-right: 0.75rem;
   color: var(--gray);
+  text-align: right;
+}
+@media (min-width: 768px) {
+  .NameField {
+    margin-right: 1rem;
+  }
+  .imgFluidRounded {
+    float: none;
+  }
 }

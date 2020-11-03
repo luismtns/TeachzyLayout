@@ -68,7 +68,7 @@ const Menu: React.FC = () => {
                   <Icon className={styles.sidebarLinks__Icon} fontSize="small">
                     {e.icon}
                   </Icon>
-                  <a className={styles.sidebarLinks}>{e.name}</a>
+                  <span className={styles.sidebarLinks}>{e.name}</span>
                 </Animated>
               </li>
             );
@@ -83,12 +83,12 @@ const Menu: React.FC = () => {
           animationOutDuration={800}
           isVisible={true}
         >
-          <a className={styles.BottomMenu__Logout}>
+          <span className={styles.BottomMenu__Logout}>
             <Icon fontSize="small" className={styles.BottomMenu__LogoutIcon}>
               login
             </Icon>{" "}
             Log out
-          </a>
+          </span>
         </Animated>
         <Animated
           animationIn="fadeInDown"

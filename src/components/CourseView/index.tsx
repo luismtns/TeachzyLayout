@@ -2,8 +2,6 @@ import React from "react";
 import styles from "./CourseView.module.css";
 import "../../styles/utils.css";
 import { Row, Col } from "react-grid-system";
-// import "../../assets/search.png";
-import linesBlue from "../../assets/lines_blue.png";
 import Icon from "@material-ui/core/Icon";
 import { Animated } from "react-animated-css";
 
@@ -43,7 +41,7 @@ const CourseView: React.FC = (props) => {
             <p>
               Gain the basic skills in User Experience. Study practice and
               theory. Find out techniques and tools used to design
-              efficiently... <a className={styles.Course__Link}>more</a>
+              efficiently... <span className={styles.Course__Link}>more</span>
             </p>
           </Animated>
         </Col>
@@ -61,10 +59,10 @@ const CourseView: React.FC = (props) => {
             <button className={styles.Btn__Black}>Buy course</button>
           </Col>
           <Col xs={6}>
-            <a className={styles.Link__review}>
+            <span className={styles.Link__review}>
               <Icon className={styles.Link__reviewIcon}>comment_bank</Icon>{" "}
               Reviews
-            </a>
+            </span>
           </Col>
         </Row>
       </Animated>
