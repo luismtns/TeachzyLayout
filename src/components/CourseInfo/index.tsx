@@ -41,7 +41,7 @@ const CourseInfo: React.FC = (props) => {
         {CourseInfoList &&
           CourseInfoList.map((el: ICourseInfo, i: number) => {
             return (
-              <Col key={i} xs={12}>
+              <Col key={i} xs={6} md={12}>
                 <Animated
                   animationIn="fadeInDown"
                   animationOut="fadeOutDown"

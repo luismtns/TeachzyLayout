@@ -54,7 +54,7 @@ const CourseView: React.FC = (props) => {
         animationOutDuration={800}
         isVisible={true}
       >
-        <Row align="center">
+        <Row className="mb-5 mb-sm-0" align="center">
           <Col xs={6}>
             <button className={styles.Btn__Black}>Buy course</button>
           </Col>

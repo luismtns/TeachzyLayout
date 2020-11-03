@@ -49,7 +49,7 @@ const Menu: React.FC = () => {
           isVisible={true}
         >
           <h1 className={styles.TitleContainer__title}>Teachzy</h1>
-          <hr className={`${styles.line} mt-5`} />
+          <hr className={`${styles.line} mt-4 mt-sm-5`} />
         </Animated>
       </div>
       <ul className={styles.linkMenu}>

@@ -4,8 +4,9 @@
   padding: 1rem;
   padding-bottom: 8.625rem;
   width: 100%;
-  max-width: 24em;
+  max-width: 24rem;
   border-radius: 1rem;
+  margin-bottom: 0;
 }
 .CourseBox__Day {
   margin: 0;
@@ -20,7 +21,7 @@
   margin-bottom: 1rem;
 }
 .Btn__Black {
-  font-size: 1em;
+  font-size: 1rem;
   padding: 1rem 2rem;
   border: 0.125em solid var(--black);
   background-color: var(--black);
@@ -31,7 +32,7 @@
     border 400ms ease-out;
 }
 .Btn__Black:hover {
-  border: 0.125em solid var(--black);
+  border: 0.125rem solid var(--black);
   background-color: transparent;
   color: var(--black);
 }
